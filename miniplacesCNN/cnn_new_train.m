@@ -1,23 +1,6 @@
 function [net, info] = cnn_new_train(net, imdb, getBatch, varargin)
-%CNN_TRAIN  An example implementation of SGD for training CNNs
-%    CNN_TRAIN() is an example learner implementing stochastic
-%    gradient descent with momentum to train a CNN. It can be used
-%    with different datasets and tasks by providing a suitable
-%    getBatch function.
-%
-%    The function automatically restarts after each training epoch by
-%    checkpointing.
-%
-%    The function supports training on CPU or on one or more GPUs
-%    (specify the list of GPU IDs in the `gpus` option). Multi-GPU
-%    support is relatively primitive but sufficient to obtain a
-%    noticable speedup.
 
-% Copyright (C) 2014-15 Andrea Vedaldi.
-% All rights reserved.
-%
-% This file is part of the VLFeat library and is made available under
-% the terms of the BSD license (see the COPYING file).
+
 opts.numAugments=2;
 opts.batchSize = 256 ;
 opts.numSubBatches = 1 ;
